@@ -2,10 +2,8 @@ package com.melprobe.tdd.hello;
 
 public class HelloWorld {
 
-    private static final String HELLO_WORLD = "Hello World";
-
     public String getMessage() {
-        return HELLO_WORLD;
+        return getMessage("World");
     }
 
     public String getMessage(String name) {

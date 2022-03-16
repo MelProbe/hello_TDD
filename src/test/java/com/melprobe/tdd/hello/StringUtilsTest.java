@@ -14,4 +14,9 @@ public class StringUtilsTest {
         assertEquals("1,200,000", StringUtils.commma(1200000));
     }
 
+    @Test(expected=IllegalStateException.class)
+    public void testException() {
+        new StringUtils();
+        fail("Expected exception");
+    }
 }
