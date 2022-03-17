@@ -15,5 +15,9 @@ public class DateTest {
         String name = class1.getName();
         assertEquals("java.util.Date", name);
     }
-
+    
+    @Test
+    public void testTimestamp() {
+        assertTrue(new Date().getTime() > 1647493037645L);
+    }
 }
